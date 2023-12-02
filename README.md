@@ -1,4 +1,4 @@
-# Hi there 👋
+<h1 align="center"><b>Hi , I'm Ashwin V 👋 </b></h1> 
 
 <!--
 **ashwin586/ashwin586** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
