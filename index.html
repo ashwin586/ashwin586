@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub README Preview - Ashwin V</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Developer Grid Background */
+    .dev-grid-bg {
+      background-color: #0b0f17;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(31, 111, 235, 0.15) 0%, transparent 65%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 36px 36px, 36px 36px;
+    }
+
+    /* Moving Command Streams in Background */
+    @keyframes scrollStreamLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes scrollStreamRight {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+
+    .command-stream-left {
+      display: flex;
+      width: max-content;
+      animation: scrollStreamLeft 38s linear infinite;
+    }
+    .command-stream-right {
+      display: flex;
+      width: max-content;
+      animation: scrollStreamRight 45s linear infinite;
+    }
+
+    .arena-badge {
+      position: absolute;
+      user-select: none;
+      touch-action: none;
+      cursor: grab;
+      will-change: transform;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      backdrop-filter: blur(10px);
+    }
+    .arena-badge:active {
+      cursor: grabbing;
+      box-shadow: 0 0 25px rgba(88, 166, 255, 0.6);
+      border-color: #58a6ff;
+    }
+  </style>
+</head>
+<body class="bg-[#090d13] text-[#c9d1d9] antialiased font-sans p-4 md:p-8 min-h-screen">
+  <div class="max-w-3xl mx-auto space-y-6">
+
+    <!-- Top Badge -->
+    <div class="flex items-center justify-between pb-3 border-b border-[#30363d]/60">
+      <div class="text-xs font-mono text-[#58a6ff] flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-[#3fb950] animate-pulse"></span>
+        ashwin586 / README.md preview
+      </div>
+      <div class="text-xs font-mono text-[#8b949e]">
+        Living Developer Terminal Matrix
+      </div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="bg-[#0d1117] border border-[#30363d] rounded-2xl p-6 md:p-8 shadow-2xl space-y-7 relative overflow-hidden">
+
+      <!-- Header Section -->
+      <div class="text-center space-y-2">
+        <h1 class="text-3xl font-extrabold text-white tracking-tight">
+          Hi, I'm Ashwin 👋
+        </h1>
+        <p class="text-sm font-mono text-[#58a6ff] font-semibold">
+          Product Engineer
+        </p>
+      </div>
+
+      <!-- Terminal JSON -->
+      <div class="bg-[#161b22] border border-[#30363d] rounded-xl overflow-hidden shadow-xl">
+        <div class="flex items-center justify-between px-4 py-2.5 bg-[#21262d] border-b border-[#30363d]">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-[#f85149]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#e3b341]"></span>
+            <span class="w-3 h-3 rounded-full bg-[#3fb950]"></span>
+          </div>
+          <div class="text-xs font-mono text-[#8b949e]">ashwin@github ~ % cat profile.json</div>
+          <div class="text-xs font-mono text-[#8b949e]">zsh</div>
+        </div>
+
+        <div class="p-4 md:p-5 font-mono text-xs md:text-sm bg-[#0d1117] overflow-x-auto">
+          <pre class="text-[#c9d1d9] leading-relaxed">{
+  <span class="text-[#79c0ff]">"role"</span>: <span class="text-[#a5d6ff]">"Product Engineer"</span>,
+  <span class="text-[#79c0ff]">"stack_mindset"</span>: <span class="text-[#a5d6ff]">"The problem picks the tool, not the other way around."</span>,
+  <span class="text-[#79c0ff]">"engineering_approach"</span>: <span class="text-[#a5d6ff]">"Using AI for rapid coding; reserving brainpower for where it matters most—system design & database architecture."</span>,
+  <span class="text-[#79c0ff]">"what_i_ship"</span>: [
+    <span class="text-[#7ee787]">"Idea-to-production features focused on user impact"</span>,
+    <span class="text-[#7ee787]">"Right-sized backends, clean API contracts & scalable schemas"</span>,
+    <span class="text-[#7ee787]">"Fast, responsive frontends without unnecessary bloat"</span>,
+    <span class="text-[#7ee787]">"Containerized, cloud-deployable setups (Docker / Kubernetes / AWS)"</span>
+  ]
+}</pre>
+        </div>
+      </div>
+
+      <!-- How I Build -->
+      <div class="space-y-3">
+        <h2 class="text-sm font-bold text-white flex items-center gap-2">
+          <span>🧠</span> How I Build
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+          <div class="p-3.5 bg-[#161b22] border border-[#30363d] rounded-lg">
+            <div class="font-bold text-[#58a6ff] mb-1 flex items-center gap-1.5">
+              <span>⚡</span> High-Speed Execution
+            </div>
+            <p class="text-[#8b949e] leading-relaxed">
+              AI accelerates syntax and boilerplate so momentum stays uninterrupted.
+            </p>
+          </div>
+
+          <div class="p-3.5 bg-[#161b22] border border-[#30363d] rounded-lg">
+            <div class="font-bold text-[#7ee787] mb-1 flex items-center gap-1.5">
+              <span>📐</span> Deliberate Architecture
+            </div>
+            <p class="text-[#8b949e] leading-relaxed">
+              Human brainpower reserved for schema modeling, edge cases, and reliable system flow.
+            </p>
+          </div>
+
+          <div class="p-3.5 bg-[#161b22] border border-[#30363d] rounded-lg">
+            <div class="font-bold text-[#d2a8ff] mb-1 flex items-center gap-1.5">
+              <span>🎯</span> Right-Sized Solutions
+            </div>
+            <p class="text-[#8b949e] leading-relaxed">
+              No premature complexity. Pragmatic architectures tailored to the actual problem.
+            </p>
+          </div>
+
+          <div class="p-3.5 bg-[#161b22] border border-[#30363d] rounded-lg">
+            <div class="font-bold text-[#f0883e] mb-1 flex items-center gap-1.5">
+              <span>☁️</span> Cloud & Deployment Fluent
+            </div>
+            <p class="text-[#8b949e] leading-relaxed">
+              Comfortable shipping with Docker, Kubernetes, Linux environments, CI/CD, and AWS primitives.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How I Play with the Stack -->
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-white flex items-center gap-2">
+            <span>🎮</span> How I Play with the Stack
+          </h2>
+        </div>
+
+        <!-- Interactive Arena with Moving Famous Commands in Background -->
+        <div id="arena" style="height: 380px; min-height: 380px;" class="relative dev-grid-bg border border-[#30363d] rounded-2xl overflow-hidden shadow-2xl">
+          
+          <!-- Moving Command Stream Layer (Background) -->
+          <div class="absolute inset-0 flex flex-col justify-around py-3 pointer-events-none opacity-20 overflow-hidden select-none font-mono text-xs text-[#8b949e]">
+            <!-- Row 1: Leftward drift -->
+            <div class="command-stream-left gap-8 items-center">
+              <span><span class="text-[#3fb950]">$</span> kubectl get pods -A -o wide</span>
+              <span><span class="text-[#58a6ff]">$</span> uvicorn main:app --reload --port 8000</span>
+              <span><span class="text-[#f0883e]">$</span> docker compose up --build -d</span>
+              <span><span class="text-[#d2a8ff]">$</span> flutter run -d chrome</span>
+              <span><span class="text-[#e3b341]">$</span> python manage.py migrate --noinput</span>
+              <!-- Loop duplicates -->
+              <span><span class="text-[#3fb950]">$</span> kubectl get pods -A -o wide</span>
+              <span><span class="text-[#58a6ff]">$</span> uvicorn main:app --reload --port 8000</span>
+              <span><span class="text-[#f0883e]">$</span> docker compose up --build -d</span>
+              <span><span class="text-[#d2a8ff]">$</span> flutter run -d chrome</span>
+              <span><span class="text-[#e3b341]">$</span> python manage.py migrate --noinput</span>
+            </div>
+
+            <!-- Row 2: Rightward drift -->
+            <div class="command-stream-right gap-8 items-center text-[#79c0ff]">
+              <span><span class="text-[#3fb950]">$</span> git commit -m "feat(api): ship product feature"</span>
+              <span><span class="text-[#f0883e]">$</span> aws eks update-kubeconfig --name prod-cluster</span>
+              <span><span class="text-[#58a6ff]">$</span> npx next build && next start</span>
+              <span><span class="text-[#e3b341]">$</span> psql -h localhost -U postgres -d core_db</span>
+              <span><span class="text-[#d2a8ff]">$</span> dart compile exe bin/server.dart</span>
+              <!-- Loop duplicates -->
+              <span><span class="text-[#3fb950]">$</span> git commit -m "feat(api): ship product feature"</span>
+              <span><span class="text-[#f0883e]">$</span> aws eks update-kubeconfig --name prod-cluster</span>
+              <span><span class="text-[#58a6ff]">$</span> npx next build && next start</span>
+              <span><span class="text-[#e3b341]">$</span> psql -h localhost -U postgres -d core_db</span>
+              <span><span class="text-[#d2a8ff]">$</span> dart compile exe bin/server.dart</span>
+            </div>
+
+            <!-- Row 3: Leftward drift -->
+            <div class="command-stream-left gap-8 items-center text-[#bc8cff]">
+              <span><span class="text-[#3fb950]">$</span> kubectl apply -f ./k8s/deployment.yaml</span>
+              <span><span class="text-[#58a6ff]">$</span> npx react-native run-ios</span>
+              <span><span class="text-[#f0883e]">$</span> docker buildx build --platform linux/amd64 -t app .</span>
+              <span><span class="text-[#e3b341]">$</span> git push origin main --tags</span>
+              <span><span class="text-[#3fb950]">$</span> curl -X POST https://api.prod/v1/health</span>
+              <!-- Loop duplicates -->
+              <span><span class="text-[#3fb950]">$</span> kubectl apply -f ./k8s/deployment.yaml</span>
+              <span><span class="text-[#58a6ff]">$</span> npx react-native run-ios</span>
+              <span><span class="text-[#f0883e]">$</span> docker buildx build --platform linux/amd64 -t app .</span>
+              <span><span class="text-[#e3b341]">$</span> git push origin main --tags</span>
+              <span><span class="text-[#3fb950]">$</span> curl -X POST https://api.prod/v1/health</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Interactive physics with Real Image Icons -->
+  <script>
+    const arena = document.getElementById('arena');
+
+    const tools = [
+      { name: "TypeScript", icon: "ts" },
+      { name: "Python", icon: "python" },
+      { name: "Dart", icon: "dart" },
+      { name: "React", icon: "react" },
+      { name: "Next.js", icon: "nextjs" },
+      { name: "FastAPI", icon: "fastapi" },
+      { name: "Django", icon: "django" },
+      { name: "Flutter", icon: "flutter" },
+      { name: "React Native", icon: "react" },
+      { name: "Node.js", icon: "nodejs" },
+      { name: "PostgreSQL", icon: "postgres" },
+      { name: "Docker", icon: "docker" },
+      { name: "Kubernetes", icon: "kubernetes" },
+      { name: "AWS", icon: "aws" },
+      { name: "Linux", icon: "linux" },
+      { name: "Git", icon: "git" }
+    ];
+
+    const badges = [];
+
+    tools.forEach((tool, index) => {
+      const el = document.createElement('div');
+      el.className = 'arena-badge flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#161b22]/90 border border-[#30363d] hover:border-[#58a6ff] shadow-lg transition-colors z-20';
+      el.innerHTML = `
+        <img src="https://skillicons.dev/icons?i=${tool.icon}" class="w-5 h-5 rounded pointer-events-none" alt="${tool.name}" />
+        <span class="text-xs font-mono font-medium text-white pointer-events-none">${tool.name}</span>
+      `;
+      arena.appendChild(el);
+
+      const w = tool.name.length * 7.5 + 46;
+      const h = 36;
+      const col = index % 4;
+      const row = Math.floor(index / 4);
+
+      const item = {
+        el,
+        w,
+        h,
+        x: 20 + col * 140 + (Math.random() * 20),
+        y: 25 + row * 62 + (Math.random() * 20),
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5,
+        isHeld: false
+      };
+      badges.push(item);
+    });
+
+    let activeItem = null;
+    let dragOffset = { x: 0, y: 0 };
+    let lastPos = { x: 0, y: 0 };
+    let dragVel = { vx: 0, vy: 0 };
+
+    badges.forEach(b => {
+      b.el.addEventListener('pointerdown', (e) => {
+        activeItem = b;
+        b.isHeld = true;
+        const rect = arena.getBoundingClientRect();
+        dragOffset.x = (e.clientX - rect.left) - b.x;
+        dragOffset.y = (e.clientY - rect.top) - b.y;
+        lastPos.x = e.clientX;
+        lastPos.y = e.clientY;
+        dragVel = { vx: 0, vy: 0 };
+        // Speed boost on click
+        b.vx *= 2.2;
+        b.vy *= 2.2;
+        b.el.style.zIndex = 50;
+      });
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      if (!activeItem) return;
+      const rect = arena.getBoundingClientRect();
+      const currentX = (e.clientX - rect.left) - dragOffset.x;
+      const currentY = (e.clientY - rect.top) - dragOffset.y;
+
+      dragVel.vx = (e.clientX - lastPos.x) * 0.45;
+      dragVel.vy = (e.clientY - lastPos.y) * 0.45;
+
+      activeItem.x = Math.max(0, Math.min(rect.width - activeItem.w, currentX));
+      activeItem.y = Math.max(0, Math.min(rect.height - activeItem.h, currentY));
+
+      lastPos.x = e.clientX;
+      lastPos.y = e.clientY;
+    });
+
+    window.addEventListener('pointerup', () => {
+      if (activeItem) {
+        activeItem.vx = Math.min(Math.max(dragVel.vx, -9), 9);
+        activeItem.vy = Math.min(Math.max(dragVel.vy, -9), 9);
+        activeItem.el.style.zIndex = 20;
+        activeItem.isHeld = false;
+        activeItem = null;
+      }
+    });
+
+    function update() {
+      const arenaW = arena.clientWidth;
+      const arenaH = arena.clientHeight;
+
+      badges.forEach(b => {
+        if (!b.isHeld) {
+          b.x += b.vx;
+          b.y += b.vy;
+
+          // Cruise velocity decay
+          const speed = Math.hypot(b.vx, b.vy);
+          if (speed > 1.2) {
+            b.vx *= 0.985;
+            b.vy *= 0.985;
+          } else if (speed < 0.5) {
+            b.vx *= 1.02;
+            b.vy *= 1.02;
+          }
+
+          // Wall bounce
+          if (b.x < 5) { b.x = 5; b.vx = Math.abs(b.vx) * 0.9; }
+          if (b.x + b.w > arenaW - 5) { b.x = arenaW - 5 - b.w; b.vx = -Math.abs(b.vx) * 0.9; }
+          if (b.y < 5) { b.y = 5; b.vy = Math.abs(b.vy) * 0.9; }
+          if (b.y + b.h > arenaH - 5) { b.y = arenaH - 5 - b.h; b.vy = -Math.abs(b.vy) * 0.9; }
+        }
+
+        b.el.style.transform = `translate3d(${b.x}px, ${b.y}px, 0)`;
+      });
+
+      requestAnimationFrame(update);
+    }
+    update();
+  </script>
+</body>
+</html>
