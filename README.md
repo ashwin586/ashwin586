@@ -37,8 +37,8 @@
 
 <br/>
 
-### 🎮 How I Play with the Stack
+### 💻 In My Terminal
 
 <div align="center">
-  <img src="./assets/stack-arena.svg" width="100%" alt="Developer Commands Matrix" />
+  <img src="./assets/stack-arena.svg" width="100%" alt="In My Terminal - Developer Commands Matrix" />
 </div>
