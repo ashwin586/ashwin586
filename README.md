@@ -40,15 +40,5 @@
 ### 🎮 How I Play with the Stack
 
 <div align="center">
-  <p>
-    <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=ts,python,dart,react,nextjs,fastapi,django,flutter,reactnative,nodejs,postgres,docker,kubernetes,aws,linux,git&perline=8&theme=dark" alt="Ashwin's Tech Stack" />
-    </a>
-  </p>
-
-  <p>
-    <a href="https://ashwin586.github.io/ashwin586/">
-      <img src="https://img.shields.io/badge/🎮_Play_with_the_Stack-Launch_Interactive_Physics_Arena_↗-1f6feb?style=for-the-badge&logo=gamepad" alt="Launch Interactive Arena" />
-    </a>
-  </p>
+  <img src="./assets/stack-arena.svg" width="100%" alt="Developer Commands Matrix" />
 </div>
