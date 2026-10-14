@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 385" width="100%" height="100%">
+  <defs>
+    <!-- Window Shadow -->
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+    <style>
+      .term-text {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .t-key { fill: #79c0ff; font-weight: bold; }
+      .t-str { fill: #a5d6ff; }
+      .t-arr { fill: #7ee787; }
+      .t-punct { fill: #8b949e; }
+      .t-cmd { fill: #c9d1d9; }
+      .t-prompt { fill: #3fb950; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect x="10" y="10" width="780" height="365" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5" filter="url(#winShadow)" />
+
+  <!-- Terminal Title Bar -->
+  <path d="M 10 22 C 10 15.37 15.37 10 22 10 L 778 10 C 784.63 10 790 15.37 790 22 L 790 46 L 10 46 Z" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <line x1="10" y1="46" x2="790" y2="46" stroke="#30363d" stroke-width="1" />
+
+  <!-- macOS Window Traffic Lights -->
+  <circle cx="32" cy="28" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5" />
+  <circle cx="52" cy="28" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5" />
+  <circle cx="72" cy="28" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.5" />
+
+  <!-- Window Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#8b949e">ashwin@github ~ % cat profile.json</text>
+
+  <!-- Terminal Command and Output -->
+  <g class="term-text">
+    <!-- Command Line -->
+    <text x="30" y="75">
+      <tspan class="t-prompt">ashwin@github</tspan>
+      <tspan class="t-punct"> ~ % </tspan>
+      <tspan class="t-cmd">cat profile.json</tspan>
+    </text>
+
+    <!-- JSON Output -->
+    <text x="30" y="105"><tspan class="t-punct">{</tspan></text>
+    
+    <text x="50" y="130">
+      <tspan class="t-key">"role"</tspan><tspan class="t-punct">: </tspan><tspan class="t-str">"Product Engineer"</tspan><tspan class="t-punct">,</tspan>
+    </text>
+
+    <text x="50" y="155">
+      <tspan class="t-key">"stack_mindset"</tspan><tspan class="t-punct">: </tspan><tspan class="t-str">"The problem picks the tool, not the other way around."</tspan><tspan class="t-punct">,</tspan>
+    </text>
+
+    <text x="50" y="180">
+      <tspan class="t-key">"engineering_approach"</tspan><tspan class="t-punct">: </tspan><tspan class="t-str">"Using AI for rapid coding; reserving brainpower for system design &amp; DB schemas."</tspan><tspan class="t-punct">,</tspan>
+    </text>
+
+    <text x="50" y="205">
+      <tspan class="t-key">"what_i_ship"</tspan><tspan class="t-punct">: [</tspan>
+    </text>
+
+    <text x="70" y="230">
+      <tspan class="t-arr">"Idea-to-production features focused on user impact"</tspan><tspan class="t-punct">,</tspan>
+    </text>
+    <text x="70" y="255">
+      <tspan class="t-arr">"Right-sized backends, clean API contracts &amp; scalable schemas"</tspan><tspan class="t-punct">,</tspan>
+    </text>
+    <text x="70" y="280">
+      <tspan class="t-arr">"Fast, responsive frontends without unnecessary bloat"</tspan><tspan class="t-punct">,</tspan>
+    </text>
+    <text x="70" y="305">
+      <tspan class="t-arr">"Containerized, cloud-deployable setups (Docker / Kubernetes / AWS)"</tspan>
+    </text>
+
+    <text x="50" y="330"><tspan class="t-punct">]</tspan></text>
+    <text x="30" y="348"><tspan class="t-punct">}</tspan></text>
+  </g>
+</svg>
